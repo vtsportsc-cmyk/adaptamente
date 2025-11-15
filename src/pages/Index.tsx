@@ -4,6 +4,7 @@ import { Check, Shield, Download, Zap } from "lucide-react";
 import ebookSensorial from "@/assets/ebook-sensorial.png";
 import ebookHiperfoco from "@/assets/ebook-hiperfoco.png";
 import ebookTempo from "@/assets/ebook-tempo.png";
+import ebookLifestyle from "@/assets/ebook-lifestyle.png";
 
 const Index = () => {
   const handleCTAClick = () => {
@@ -48,7 +49,7 @@ const Index = () => {
 
       {/* Pain Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
-        <div className="max-w-4xl mx-auto space-y-12">
+        <div className="max-w-6xl mx-auto space-y-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-center text-foreground">
             A vida parece uma luta constante contra o seu próprio cérebro?
           </h2>
@@ -57,6 +58,15 @@ const Index = () => {
             Se você se identifica com Transtorno do Déficit de Atenção com Hiperatividade (TDAH) ou Autismo, 
             você sabe que o mundo nem sempre foi feito para você.
           </p>
+
+          {/* Lifestyle Image */}
+          <div className="max-w-4xl mx-auto">
+            <img 
+              src={ebookLifestyle} 
+              alt="Manual de Sobrevivência Sensorial em diferentes dispositivos" 
+              className="w-full h-auto rounded-2xl shadow-lg"
+            />
+          </div>
 
           <div className="space-y-6 pt-8">
             <h3 className="text-xl font-semibold text-center text-foreground mb-8">
