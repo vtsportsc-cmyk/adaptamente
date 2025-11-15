@@ -5,6 +5,8 @@ import ebookSensorial from "@/assets/ebook-sensorial.png";
 import ebookHiperfoco from "@/assets/ebook-hiperfoco.png";
 import ebookTempo from "@/assets/ebook-tempo.png";
 import ebookLifestyle from "@/assets/ebook-lifestyle.png";
+import CountdownTimer from "@/components/CountdownTimer";
+import UrgencyBadge from "@/components/UrgencyBadge";
 
 const Index = () => {
   const handleCTAClick = () => {
@@ -30,7 +32,9 @@ const Index = () => {
             Liberte-se do caos e encontre o seu ritmo.
           </h3>
           
-          <div className="pt-8">
+          <div className="pt-8 space-y-6">
+            <UrgencyBadge variant="discount" />
+            
             <Button 
               variant="hero" 
               size="xl"
@@ -39,11 +43,11 @@ const Index = () => {
             >
               QUERO MEU KIT COMPLETO AGORA
             </Button>
+            
+            <p className="text-sm text-muted-foreground">
+              Compra 100% segura. Acesso imediato ao material completo.
+            </p>
           </div>
-          
-          <p className="text-sm text-muted-foreground pt-4">
-            Compra 100% segura. Acesso imediato ao material completo.
-          </p>
         </div>
       </section>
 
@@ -338,6 +342,8 @@ const Index = () => {
             Tenha o controle de volta. Por uma oferta imperdível.
           </h2>
           
+          <CountdownTimer targetHours={24} />
+          
           <div className="space-y-4 text-lg">
             <p className="text-muted-foreground">
               Cada ebook foi cuidadosamente criado para ser um guia completo em sua área. 
@@ -357,6 +363,8 @@ const Index = () => {
           
           <Card className="p-12 bg-primary/5 border-2 border-primary shadow-xl">
             <div className="space-y-6">
+              <UrgencyBadge remainingSpots={7} />
+              
               <p className="text-sm uppercase tracking-wider text-primary font-semibold">
                 Oferta Especial de Lançamento
               </p>
