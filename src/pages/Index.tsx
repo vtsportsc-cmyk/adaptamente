@@ -10,8 +10,7 @@ import UrgencyBadge from "@/components/UrgencyBadge";
 
 const Index = () => {
   const handleCTAClick = () => {
-    // Handle CTA click - can be linked to payment/checkout
-    console.log("CTA clicked");
+    window.open('https://pay.kiwify.com.br/F5Uzn6j', '_blank');
   };
 
   return (
