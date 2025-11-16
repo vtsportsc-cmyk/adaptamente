@@ -9,14 +9,21 @@ const corsHeaders = {
 interface KiwifyWebhookPayload {
   order_id: string;
   order_ref?: string;
-  product_name: string;
+  Product?: {
+    product_id: string;
+    product_name: string;
+  };
   Customer?: {
     email: string;
     full_name?: string;
+    first_name?: string;
     mobile?: string;
   };
+  Commissions?: {
+    charge_amount?: number;
+    my_commission?: number;
+  };
   order_status: string;
-  amount?: number;
   approved_date?: string;
   payment_method?: string;
   [key: string]: any;
@@ -34,11 +41,26 @@ serve(async (req) => {
     const payload: KiwifyWebhookPayload = await req.json();
     console.log('Webhook payload:', JSON.stringify(payload, null, 2));
 
+    // Validate security token
+    const token = req.headers.get('x-kiwify-signature') || req.headers.get('authorization');
+    const expectedToken = 'vqxf7hyqpt8';
+    
+    if (token !== expectedToken && token !== `Bearer ${expectedToken}`) {
+      console.error('Invalid security token');
+      return new Response(
+        JSON.stringify({ error: 'Unauthorized: Invalid security token' }),
+        { 
+          status: 401,
+          headers: { ...corsHeaders, 'Content-Type': 'application/json' }
+        }
+      );
+    }
+
     // Validate required fields
-    if (!payload.order_id || !payload.product_name) {
+    if (!payload.order_id || !payload.Product?.product_name) {
       console.error('Missing required fields:', payload);
       return new Response(
-        JSON.stringify({ error: 'Missing required fields: order_id or product_name' }),
+        JSON.stringify({ error: 'Missing required fields: order_id or Product.product_name' }),
         { 
           status: 400,
           headers: { ...corsHeaders, 'Content-Type': 'application/json' }
@@ -66,11 +88,11 @@ serve(async (req) => {
     // Prepare order data
     const orderData = {
       order_id: payload.order_id || payload.order_ref || '',
-      product_name: payload.product_name,
+      product_name: payload.Product?.product_name || 'Produto desconhecido',
       customer_email: payload.Customer?.email || 'no-email@example.com',
-      customer_name: payload.Customer?.full_name || 'Cliente Kiwify',
+      customer_name: payload.Customer?.full_name || payload.Customer?.first_name || 'Cliente Kiwify',
       customer_phone: payload.Customer?.mobile || null,
-      amount: payload.amount || 0,
+      amount: payload.Commissions?.charge_amount || payload.Commissions?.my_commission || 0,
       status: 'approved',
       payment_method: payload.payment_method || null,
       kiwify_data: payload,
