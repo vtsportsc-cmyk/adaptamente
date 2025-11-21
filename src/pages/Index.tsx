@@ -147,8 +147,8 @@ const Index = () => {
               O que você recebe no seu Kit:
             </h3>
             
-            <div className="grid md:grid-cols-3 gap-8">
-              <Card className="p-6 text-center bg-card shadow-sm hover:shadow-lg transition-all">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+              <Card className="p-4 sm:p-6 text-center bg-card shadow-sm hover:shadow-lg transition-all">
                 <img 
                   src={ebookSensorial} 
                   alt="Manual de Sobrevivência Sensorial" 
@@ -159,7 +159,7 @@ const Index = () => {
                 </h4>
               </Card>
 
-              <Card className="p-6 text-center bg-card shadow-sm hover:shadow-lg transition-all">
+              <Card className="p-4 sm:p-6 text-center bg-card shadow-sm hover:shadow-lg transition-all">
                 <img 
                   src={ebookHiperfoco} 
                   alt="Hiperfoco Produtivo" 
@@ -170,7 +170,7 @@ const Index = () => {
                 </h4>
               </Card>
 
-              <Card className="p-6 text-center bg-card shadow-sm hover:shadow-lg transition-all">
+              <Card className="p-4 sm:p-6 text-center bg-card shadow-sm hover:shadow-lg transition-all">
                 <img 
                   src={ebookTempo} 
                   alt="Gestão de Tempo Não-Linear" 
@@ -188,9 +188,9 @@ const Index = () => {
       {/* Benefits Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {/* Ebook 1 */}
-            <Card className="p-8 space-y-6 bg-card shadow-md">
+            <Card className="p-6 sm:p-8 space-y-6 bg-card shadow-md">
               <img 
                 src={ebookSensorial} 
                 alt="Manual de Sobrevivência Sensorial" 
@@ -226,7 +226,7 @@ const Index = () => {
             </Card>
 
             {/* Ebook 2 */}
-            <Card className="p-8 space-y-6 bg-card shadow-md">
+            <Card className="p-6 sm:p-8 space-y-6 bg-card shadow-md">
               <img 
                 src={ebookHiperfoco} 
                 alt="Hiperfoco Produtivo" 
@@ -262,7 +262,7 @@ const Index = () => {
             </Card>
 
             {/* Ebook 3 */}
-            <Card className="p-8 space-y-6 bg-card shadow-md">
+            <Card className="p-6 sm:p-8 space-y-6 bg-card shadow-md">
               <img 
                 src={ebookTempo} 
                 alt="Gestão de Tempo Não-Linear" 
@@ -307,8 +307,8 @@ const Index = () => {
             O que dizem quem já está usando o Kit Adaptamente
           </h2>
           
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="p-8 space-y-4 bg-card shadow-md">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            <Card className="p-6 sm:p-8 space-y-4 bg-card shadow-md">
               <div className="text-4xl text-primary">"</div>
               <p className="text-lg text-foreground leading-relaxed">
                 Finalmente encontrei estratégias que funcionam para o meu cérebro! O guia de gestão de tempo 
@@ -320,7 +320,7 @@ const Index = () => {
               </div>
             </Card>
 
-            <Card className="p-8 space-y-4 bg-card shadow-md">
+            <Card className="p-6 sm:p-8 space-y-4 bg-card shadow-md">
               <div className="text-4xl text-primary">"</div>
               <p className="text-lg text-foreground leading-relaxed">
                 O Manual de Sobrevivência Sensorial mudou minha vida. Agora eu sei como criar meu 'kit de emergência' 
@@ -406,7 +406,7 @@ const Index = () => {
             </p>
           </div>
           
-          <Card className="p-12 bg-primary/5 border-2 border-primary shadow-xl">
+          <Card className="p-6 sm:p-8 md:p-12 bg-primary/5 border-2 border-primary shadow-xl">
             <div className="space-y-6">
               <UrgencyBadge remainingSpots={7} />
               
@@ -441,8 +441,8 @@ const Index = () => {
             Seu investimento é 100% seguro.
           </h2>
           
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="p-8 text-center space-y-4 bg-card shadow-sm">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+              <Card className="p-6 sm:p-8 text-center space-y-4 bg-card shadow-sm">
               <div className="flex justify-center">
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
                   <Shield className="w-8 h-8 text-primary" />
@@ -457,7 +457,7 @@ const Index = () => {
               </p>
             </Card>
             
-            <Card className="p-8 text-center space-y-4 bg-card shadow-sm">
+              <Card className="p-6 sm:p-8 text-center space-y-4 bg-card shadow-sm">
               <div className="flex justify-center">
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
                   <Shield className="w-8 h-8 text-primary" />
@@ -471,7 +471,7 @@ const Index = () => {
               </p>
             </Card>
             
-            <Card className="p-8 text-center space-y-4 bg-card shadow-sm">
+            <Card className="p-6 sm:p-8 text-center space-y-4 bg-card shadow-sm">
               <div className="flex justify-center">
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
                   <Zap className="w-8 h-8 text-primary" />
