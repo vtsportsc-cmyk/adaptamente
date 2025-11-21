@@ -73,7 +73,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
             <img 
               src={ebookLifestyle} 
-              alt="Manual de Sobrevivência Sensorial em diferentes dispositivos" 
+              alt="Kit Adaptamente: três ebooks para TDAH e Autismo exibidos em diferentes dispositivos - Manual de Sobrevivência Sensorial, Hiperfoco Produtivo e Gestão de Tempo Não-Linear" 
               className="w-full h-auto rounded-2xl shadow-lg"
             />
           </div>
@@ -151,7 +151,7 @@ const Index = () => {
               <Card className="p-4 sm:p-6 text-center bg-card shadow-sm hover:shadow-lg transition-all">
                 <img 
                   src={ebookSensorial} 
-                  alt="Manual de Sobrevivência Sensorial" 
+                  alt="Capa do ebook Manual de Sobrevivência Sensorial - guia prático para gerenciar sobrecarga sensorial em pessoas com TDAH e Autismo" 
                   className="w-full h-auto rounded-lg mb-6"
                 />
                 <h4 className="text-xl font-semibold text-foreground mb-2">
@@ -162,7 +162,7 @@ const Index = () => {
               <Card className="p-4 sm:p-6 text-center bg-card shadow-sm hover:shadow-lg transition-all">
                 <img 
                   src={ebookHiperfoco} 
-                  alt="Hiperfoco Produtivo" 
+                  alt="Capa do ebook Hiperfoco Produtivo - estratégias para direcionar e usar o hiperfoco em pessoas com TDAH e Autismo" 
                   className="w-full h-auto rounded-lg mb-6"
                 />
                 <h4 className="text-xl font-semibold text-foreground mb-2">
@@ -173,7 +173,7 @@ const Index = () => {
               <Card className="p-4 sm:p-6 text-center bg-card shadow-sm hover:shadow-lg transition-all">
                 <img 
                   src={ebookTempo} 
-                  alt="Gestão de Tempo Não-Linear" 
+                  alt="Capa do ebook Gestão de Tempo Não-Linear - método de organização e produtividade para TDAH e Autismo" 
                   className="w-full h-auto rounded-lg mb-6"
                 />
                 <h4 className="text-xl font-semibold text-foreground mb-2">
@@ -193,7 +193,7 @@ const Index = () => {
             <Card className="p-6 sm:p-8 space-y-6 bg-card shadow-md">
               <img 
                 src={ebookSensorial} 
-                alt="Manual de Sobrevivência Sensorial" 
+                alt="Manual de Sobrevivência Sensorial - técnicas e ferramentas para reduzir sobrecarga sensorial no TDAH e Autismo" 
                 className="w-full h-auto rounded-lg"
               />
               <h3 className="text-2xl font-bold text-foreground">
@@ -229,7 +229,7 @@ const Index = () => {
             <Card className="p-6 sm:p-8 space-y-6 bg-card shadow-md">
               <img 
                 src={ebookHiperfoco} 
-                alt="Hiperfoco Produtivo" 
+                alt="Hiperfoco Produtivo - como transformar o hiperfoco em superpoder para pessoas com TDAH e Autismo" 
                 className="w-full h-auto rounded-lg"
               />
               <h3 className="text-2xl font-bold text-foreground">
@@ -265,7 +265,7 @@ const Index = () => {
             <Card className="p-6 sm:p-8 space-y-6 bg-card shadow-md">
               <img 
                 src={ebookTempo} 
-                alt="Gestão de Tempo Não-Linear" 
+                alt="Gestão de Tempo Não-Linear - sistema de organização adaptado para cérebros neurodivergentes com TDAH e Autismo" 
                 className="w-full h-auto rounded-lg"
               />
               <h3 className="text-2xl font-bold text-foreground">
