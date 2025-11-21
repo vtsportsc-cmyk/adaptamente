@@ -300,6 +300,45 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+        <div className="max-w-6xl mx-auto space-y-12">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center text-foreground">
+            O que dizem quem já está usando o Kit Adaptamente
+          </h2>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="p-8 space-y-4 bg-card shadow-md">
+              <div className="text-4xl text-primary">"</div>
+              <p className="text-lg text-foreground leading-relaxed">
+                Finalmente encontrei estratégias que funcionam para o meu cérebro! O guia de gestão de tempo 
+                me ajudou a sair da paralisia e começar a entregar projetos sem aquela culpa constante.
+              </p>
+              <div className="pt-4">
+                <p className="font-semibold text-foreground">Marina Silva</p>
+                <p className="text-sm text-muted-foreground">Designer com TDAH, 28 anos</p>
+              </div>
+            </Card>
+
+            <Card className="p-8 space-y-4 bg-card shadow-md">
+              <div className="text-4xl text-primary">"</div>
+              <p className="text-lg text-foreground leading-relaxed">
+                O Manual de Sobrevivência Sensorial mudou minha vida. Agora eu sei como criar meu 'kit de emergência' 
+                e não me sinto mais exausto só de sair de casa. É libertador!
+              </p>
+              <div className="pt-4">
+                <p className="font-semibold text-foreground">Rafael Costa</p>
+                <p className="text-sm text-muted-foreground">Desenvolvedor autista, 32 anos</p>
+              </div>
+            </Card>
+          </div>
+          
+          <p className="text-center text-sm text-muted-foreground italic">
+            * Depoimentos de exemplo. Serão substituídos por avaliações reais de clientes.
+          </p>
+        </div>
+      </section>
+
       {/* Target Audience Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto space-y-12">
