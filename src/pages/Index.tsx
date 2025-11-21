@@ -41,7 +41,7 @@ const Index = () => {
                 onClick={handleCTAClick}
                 className="w-full sm:w-auto"
               >
-                QUERO MEU KIT COMPLETO AGORA
+                QUERO O KIT ADAPTAMENTE POR R$ 47,90
               </Button>
               
               <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
@@ -374,9 +374,11 @@ const Index = () => {
               <p className="text-sm uppercase tracking-wider text-primary font-semibold">
                 Oferta Especial de Lançamento
               </p>
-              <p className="text-5xl sm:text-6xl font-bold text-primary">
-                R$ 47,90
-              </p>
+              <div className="bg-primary text-primary-foreground py-6 px-8 rounded-lg">
+                <p className="text-6xl sm:text-7xl font-black">
+                  R$ 47,90
+                </p>
+              </div>
               <p className="text-lg text-muted-foreground">
                 Acesso vitalício aos 3 ebooks completos
               </p>
@@ -386,7 +388,7 @@ const Index = () => {
                 onClick={handleCTAClick}
                 className="w-full sm:w-auto mt-6"
               >
-                SIM, EU QUERO MEU KIT COMPLETO AGORA E ECONOMIZAR!
+                QUERO O KIT ADAPTAMENTE POR R$ 47,90
               </Button>
             </div>
           </Card>
@@ -465,7 +467,7 @@ const Index = () => {
             onClick={handleCTAClick}
             className="w-full sm:w-auto"
           >
-            QUERO O KIT ADAPTAMENTE POR R$ 47,90 AGORA!
+            QUERO O KIT ADAPTAMENTE POR R$ 47,90
           </Button>
         </div>
       </section>
