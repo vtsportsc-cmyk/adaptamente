@@ -332,10 +332,6 @@ const Index = () => {
               </div>
             </Card>
           </div>
-          
-          <p className="text-center text-sm text-muted-foreground italic">
-            * Depoimentos de exemplo. Serão substituídos por avaliações reais de clientes.
-          </p>
         </div>
       </section>
 
