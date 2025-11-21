@@ -16,8 +16,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center space-y-8">
+      <section className="py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center space-y-6">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
             Você se sente sobrecarregado pelo mundo e paralisado pela sua mente?
           </h1>
@@ -27,21 +27,28 @@ const Index = () => {
             dominar seu hiperfoco e organizar o tempo do seu jeito.
           </h2>
           
-          <h3 className="text-2xl sm:text-3xl font-semibold text-primary">
+          <h3 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-primary">
             Liberte-se do caos e encontre o seu ritmo.
           </h3>
           
-          <div className="pt-8 space-y-6">
+          <div className="pt-6 space-y-4">
             <UrgencyBadge variant="discount" />
             
-            <Button 
-              variant="hero" 
-              size="xl"
-              onClick={handleCTAClick}
-              className="w-full sm:w-auto"
-            >
-              QUERO MEU KIT COMPLETO AGORA
-            </Button>
+            <div className="space-y-3">
+              <Button 
+                variant="hero" 
+                size="xl"
+                onClick={handleCTAClick}
+                className="w-full sm:w-auto"
+              >
+                QUERO MEU KIT COMPLETO AGORA
+              </Button>
+              
+              <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
+                <Download className="w-4 h-4" />
+                <span className="font-medium">Acesso Imediato • Formato Digital</span>
+              </div>
+            </div>
             
             <p className="text-sm text-muted-foreground">
               Compra 100% segura. Acesso imediato ao material completo.
