@@ -41,7 +41,7 @@ const Index = () => {
                 onClick={handleCTAClick}
                 className="w-full sm:w-auto"
               >
-                QUERO O KIT ADAPTAMENTE POR R$ 47,90
+                QUERO O KIT ADAPTAMENTE POR R$ 10,00
               </Button>
               
               <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
