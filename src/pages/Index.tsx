@@ -411,7 +411,7 @@ const Index = () => {
               </p>
               <div className="bg-primary text-primary-foreground py-6 px-8 rounded-lg">
                 <p className="text-6xl sm:text-7xl font-black">
-                  R$ 47,90
+                  R$ 10,00
                 </p>
               </div>
               <p className="text-lg text-muted-foreground">
@@ -423,7 +423,7 @@ const Index = () => {
                 onClick={handleCTAClick}
                 className="w-full sm:w-auto mt-6"
               >
-                QUERO O KIT ADAPTAMENTE POR R$ 47,90
+                QUERO O KIT ADAPTAMENTE POR R$ 10,00
               </Button>
             </div>
           </Card>
